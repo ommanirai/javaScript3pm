@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <h2 id="demo">hello!</h2>
+    <button onclick="click_me()" >change me</button>
+    <!-- <button id="dark" onclick="darkmode()">dark mode</button>
+    <button id="normal" onclick="darkmode()">normal mode</button> -->
+    <!-- dom => document object model -->
+    <script>
+        function click_me(){
+            // document.write("i am clicked");
+            document.getElementById("demo").innerHTML = 'now changed'
+        }
+        function darkmode(){
+            document.getElementById("dark").style.backgroundColor = 'black';
+            document.getElementById("dark").style.width = '900px';
+            document.getElementById("dark").style.height = '900px';
+        }
+        function normalmode(){
+            document.getElementById("normal").style.backgroundColor = 'azure';
+            document.getElementById("normal").style.width = '900px';
+            document.getElementById("normal").style.height = '900px';
+        }
+        document.write("dom print");
+        // window.alert("i am here");
+        // document.getElementById("demo").innerHTML = "Using js"
+        // a = prompt("enter the number");
+        // document.write(a)
+        // window.print();
+
+    </script>
+</body>
+
+</html>
