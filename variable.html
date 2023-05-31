@@ -42,13 +42,65 @@
         FirstName: pascal case
         first_name: snake case
 
-        */
-       let firstName = 'ram';
-       let middle_name = 'kumar';
-       let LastName = 'ram'
 
-        let name = prompt("enter your name")
-        console.log(name)
+        data types in js:
+        1. primitive data type
+            a. number
+            b. string
+            c. boolean
+            d. null
+            e. undefined
+        2. non primitive data type
+            a. array
+            b. object
+        */
+        let firstName = 'ram';
+        let middle_name = 'kumar';
+        let LastName = 'ram'
+
+        //  number
+        var num = 23.2323;
+        // console.log(typeof(num))
+
+        // string
+        let name = "asdfasdf";
+        console.log("type of name is:" + typeof (name))
+
+        // boolean
+        var bol = false
+        console.log(typeof (bol))
+
+        // null
+        var nulll = null;
+        // console.log(typeof (nulll))
+
+        // undefined
+        let abc;
+        // console.log(abc)
+
+        // object
+        var details = {
+            name: 'ram',
+            address: 'kathmandu',
+            phone: 2930,
+            email: 'ram@gmail.com',
+            status: 'active'
+        }
+        details.salary = 12000;
+
+        details['email'] = 'shyam@gmail.com'
+        details.email = 'shankar@gmail.com'
+
+        console.log(details['email'])
+        console.log(details.email)
+        console.log(details)
+        // console.log(details.salary)
+
+        // console.log(details)
+        // console.log(typeof(details))
+
+        // let name = prompt("enter your name")
+        // console.log(name)
     </script>
 </body>
 
