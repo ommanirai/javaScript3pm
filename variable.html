@@ -79,20 +79,31 @@
         // console.log(abc)
 
         // object
+        /*
+        -> object is pair of key/value, property/value, name/value
+        
+        */
         var details = {
             name: 'ram',
             address: 'kathmandu',
             phone: 2930,
             email: 'ram@gmail.com',
-            status: 'active'
+            status: 'active',
+            name: 1233432
         }
-        details.salary = 12000;
+        // js is dynamically typed/weakly typed/ loosely typed programming language
+        var a = 'hari'
+        a = true
+        a = 12
+        console.log(a)
+        // details.salary = 12000;
+        details['salary'] = 12000
 
         details['email'] = 'shyam@gmail.com'
         details.email = 'shankar@gmail.com'
 
-        console.log(details['email'])
-        console.log(details.email)
+        // console.log(details['email'])
+        // console.log(details.email)
         console.log(details)
         // console.log(details.salary)
 
@@ -101,6 +112,18 @@
 
         // let name = prompt("enter your name")
         // console.log(name)
+
+
+        // array
+        /*
+        -> collection of elements
+        -> elements inside array are store within a square braces seperated by comma
+        -> array of js is heterogeneous(accept multiple data type)
+        -> index of array always starts with 0
+        */
+       var fruits = ["apple", 'mango', 'kiwi', 12, true]
+       console.log(fruits[9])
+
     </script>
 </body>
 
