@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        logical operator:
+        T => true
+        F => false
+
+        && (logical and)
+        a   b   a&&b
+        T   T   T
+        T   F   F
+        F   T   F
+        F   F   F
+
+        || (logical or)
+        a   b   a||b
+        T   T   T
+        T   F   T
+        F   T   T
+        F   F   F
+
+
+        ! (logical not)
+        a   !a
+        T   F
+        F   T
+
+
+        if(condition){
+
+        }
+        condition
+        true: value
+        falsy value: false, 0, null, undefined, NaN, ""
+        */
+        var a = 23;
+        var b = 36;
+        // if (null) {
+        //     console.log("true")
+        // }
+        if(!(a <15)){
+            console.log("somehtindsafsf")
+        }
+        if (a > 12 && b < 20 && a != b) {
+            console.log("body of truth")
+        }
+        if (a > 24 || b > 12) { // F||T => T
+            console.log("logical or statement goes here")
+        }
+        if (a != 23) { //23 != 23(F)  23 == 23 (T)
+            console.log("the value of a is 23")
+        }
+        if(!a){
+            console.log("a is not equalls to 23")
+        }
+    </script>
+</body>
+
+</html>
