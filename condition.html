@@ -66,18 +66,54 @@
             console.log("a is greater than 20")
         }
 
-        var per = prompt("enter your SEE percentage")
-        if (per > 80) { // 70 > 80
-            console.log("congratulation, you got A division")
+
+        /*
+        if(condition){
+            if(condition){
+                
+            }
+            else if(condition){
+
+            }
+            else if(condition){
+
+            }
+            else{
+                
+            }
+
         }
-        else if (per <= 80 && per > 60) { // 70 <= 80 && 70 > 60
-            console.log("you got B division")
+        else{
+
         }
-        else if (per <= 60 && per > 45) {
-            console.log("you got C division")
-        }
-        else if (per <= 45 && per > 35) {
-            console.log("you got D")
+        
+        */
+        var nepali = prompt("enter the marks of nepali")
+        var english = prompt("enter the marks of engish")
+        var math = prompt("enter the marks of math")
+        var science = prompt("enter the marks of science")
+        var computer = prompt("enter the marks of computer")
+        nepali = Number(nepali)
+        english = Number(english)
+        math = Number(math)
+        science = Number(science)
+        computer = Number(computer)
+        // console.log(typeof (nepali))
+        if (nepali >= 35 && english >= 35 && math >= 35 && science >= 35 && computer >= 35) {
+            var per = ((nepali + english + math + science + computer) / 500) * 100
+            console.log(per)
+            if (per >= 80) { // 70 > 80
+                console.log("congratulation, you got A division")
+            }
+            else if (per < 80 && per > 60) { // 70 <= 80 && 70 > 60
+                console.log("you got B division")
+            }
+            else if (per <= 60 && per > 45) {
+                console.log("you got C division")
+            }
+            else{
+                console.log("you got D")
+            }
         }
         else {
             console.log("Fail")

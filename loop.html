@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        types of loop
+        1. for
+        syntax:
+    
+        for(initialization; condition; increment/decrement){
+            // body of for loop
+        }
+    
+    
+        2. while
+        syntax:
+    
+        initialization;
+        while(condition){
+            // body of while
+            // increment/decrement
+        }
+    
+        3. do while
+        syntax:
+
+        initialization;
+        do{
+            // body of do
+            // increment/decrement
+        }while(condition)
+        
+        
+        */
+        //  sum of natural number
+        n = prompt("enter the number")
+        // sum = 0
+        // for (i = 0; i <= n; i++) {
+        //     sum += i;
+
+        // }
+        // console.log(sum)
+
+        // i = 0
+        // while(i<=n){
+        //     sum += i;
+        //     i++;
+        // }
+        // console.log(sum)
+
+
+        // prime number
+        count = 0
+
+        // for (i = 1; i <= n; i++) {
+        //     if (n % i == 0) {
+        //         count++
+        //     }
+        // }
+        // if (count == 2) {
+        //     console.log("it is a prime number")
+        // }
+        // else {
+        //     console.log("it is not a prime number")
+        // }
+
+
+        // i = 1
+        // while (i <= n) {
+        //     if (n % i == 0) {
+        //         count++
+        //     }
+        //     i++
+        // }
+        // if (count == 2) {
+        //     console.log("it is a prime number")
+        // }
+        // else {
+        //     console.log("it is not a prime number")
+        // }
+
+
+        i = 1;
+        do {
+            if (n % i == 0) {
+                count++
+            }
+            i++
+        } while (i <= n);
+
+        if (count == 2) {
+            console.log("it is a prime number")
+        }
+        else {
+            console.log("it is not a prime number")
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
