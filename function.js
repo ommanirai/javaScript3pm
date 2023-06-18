@@ -61,8 +61,8 @@ types of function:
 1. named function
 2. function with argument
 3. function with return type
-4. IIFE(immidiately invoked functional expression)
-5. anynamous function(unnamed function)
+4. anynamous function(unnamed function)
+5. IIFE(immidiately invoked functional expression)
 
 1. named function
 syntax: 
@@ -88,6 +88,19 @@ function function_name(a, b){
     sum = a + b
     return sum
 }
+
+4. anynamous function(unnamed function)
+
+syntax:
+
+function(){
+
+}
+
+5. IIFE(immidiately invoked functional expression)
+
+syntax:
+(function)()
 
 */
 var detailss = {
@@ -167,3 +180,15 @@ console.log("what comes in ", result.fruits[3])
 // console.log('sum of two number is: ',result)
 // console.log('sum : ',res)
 // console.log('sum of number: ',results)
+
+
+// IIFE Example
+function hi(){
+    console.log("hi from IIFE")
+}
+// (hi)()
+
+(function(){
+    console.log("i am IIFE")
+    console.log("i am taking help of IIFE to get executed")
+})()
