@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Watch</title>
+</head>
+
+<body>
+    <!-- 0 h:0 m:0 s -->
+    <h2 id="time">Time</h2>
+    <!-- <h2>Hour:</h2>
+    <h2 id="hour">00</h2>
+    <h2>Minutes:</h2>
+    <h2 id="minutes">00</h2>
+    <h2>Second:</h2>
+    <h2 id="second">00</h2> -->
+    <script>
+        var sec = 0
+        var minutes = 0
+        var hour = 0
+        setInterval(function () {
+            sec++
+            if (sec == 60) {
+                minutes++
+                sec = 0;
+            }
+            if(minutes ==60 ){
+                hour++
+                minutes = 0
+            }
+            // document.getElementById("second").innerHTML = sec;
+            // document.getElementById("minutes").innerHTML = minutes;
+            // document.getElementById("hour").innerHTML = hour;
+            document.getElementById("time").innerHTML = hour + " h : " + minutes + " m : " + sec + " s"
+        }, 1000)
+    </script>
+</body>
+
+</html>
