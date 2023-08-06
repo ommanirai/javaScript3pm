@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <style>
+        .player {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="player">
+        <h1>Player One</h1>
+        <h1>Player Two</h1>
+    </div>
+    <div class="player">
+        <img src="" id="player-first" alt="">
+        <img src="" id="player-second" alt="">
+    </div>
+    <h1 id="result"></h1>
+    <script>
+        var images = ['face1.png', 'face2.png', 'face3.png', 'face4.png', 'face5.png', 'face6.png']
+
+        // images[0]
+
+        var number1 = Math.random() * 5
+        number1 = Math.floor(number1) // 0-5
+        // document.write(number1)
+
+        var number2 = Math.random() * 5
+        number2 = Math.floor(number2)
+        // document.write(number2)
+
+        document.getElementById("player-first").src = images[number1] // images[0] => face1.png
+        document.getElementById("player-second").src = images[number2] // images[0] => face2.png
+
+        if (number1 == number2) {
+
+            document.getElementById("result").innerHTML = "Draw"
+        }
+        else if (number1 > number2) {
+            document.getElementById("result").innerHTML = "Player One Win"
+        }
+        else {
+            document.getElementById("result").innerHTML = "Player Two Win"
+        }
+
+    </script>
+</body>
+
+</html>

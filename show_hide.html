@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="password">Password</label>
+    <input type="password" id="pass">
+    <span onclick="show_me()" id="show">SHOW</span>
+
+
+    <script>
+
+        var show_hide = "password"
+
+        function show_me() {
+            if (show_hide == "password") {
+                document.getElementById("pass").type = "text"
+                document.getElementById("show").innerHTML = "HIDE"
+                show_hide = "text"
+            }
+            else {
+                document.getElementById("pass").type = "password"
+                document.getElementById("show").innerHTML = "SHOW"
+                show_hide = "password"
+            }
+        }
+    </script>
+</body>
+
+</html>

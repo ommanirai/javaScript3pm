@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="heading" class="hi">hello world</h1>
+    <h3 id="" class="hi">asdfasdf</h3>
+    <h5>heading fifth</h5>
+    <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?b=1&s=612x612&w=0&k=20&c=81f5HaMtoPNUrdfa4hnS8NcwEgD9tH2nnTUBu25Msug=" alt="" id="image">
+    <script>
+        document.getElementById("heading").style.backgroundColor = 'green'
+        document.getElementById("heading").style.color = 'red'
+        /*
+        dom
+        document object model
+
+        method: createElement(), getElementById(), getElementByClassName()
+        property: innerHTML, textContent
+        */
+        //    document.querySelector("h5").setAttribute("class", 'heading5 from dom')
+        document.getElementById("image").src = "https://png.pngtree.com/thumb_back/fh260/background/20210902/pngtree-summer-mountain-sunrise-and-sunset-scenery-clouds-natural-scenery-natural-scenery-image_789792.jpg"
+        document.querySelector("h5").classList = 'direct-method'
+        var attr = document.querySelector("h5").getAttribute("class")
+        console.log(attr)
+
+
+
+
+        var demo = document.getElementById("heading")
+        demo.innerHTML = '<p>text in teh form of paragraph </p>'
+        //    document.getElementsByClassName("hi")[1].innerHTML = '<p>text in teh form of paragraph </p>'
+
+        var result = document;
+        console.log(result)
+        var newtag = document.body;
+        var tag = document.createElement("div")
+        var paragraph = document.createElement("p")
+        newtag.append(tag)
+        newtag.append(paragraph)
+
+        document.getElementById("heading").remove()
+
+    </script>
+</body>
+
+</html>

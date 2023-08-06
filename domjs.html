@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <h1 id="heading">DOM</h1>
+    <img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg" alt="" id="image">
+    <!-- 
+        /*
+        dom:
+        document object model
+   
+        method => getElementById(), getElementByClassName(), querySelector(), createElement()
+        property => innerHTML, textContent
+        */
+     -->
+
+    <script>
+        var res = document;
+        var content = document.body;
+        //    console.log(content)
+        var ele = document.createElement('div')
+        content.append(ele)
+        document.querySelector("div").id = 'ram'
+        // content.append(document.createElement('div'))
+        document.getElementById("ram").remove()
+        console.log(res);
+
+        document.getElementById("heading").innerHTML = "Document Object Model"
+        // document.querySelector("h1").setAttribute("title", "DOM")
+        document.querySelector('h1').title = 'dom random'
+        document.querySelector("h1").classList = 'demo'
+        // console.log(document.querySelector("h1").getAttribute("title"))
+
+        console.log(document.querySelector("h1").getAttribute("title"))
+        document.getElementById("heading").style.color = 'red'
+        document.getElementById("heading").style.backgroundColor = 'blue'
+        document.getElementById("image").src = 'https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?size=626&ext=jpg'
+
+    </script>
+</body>
+
+</html>
